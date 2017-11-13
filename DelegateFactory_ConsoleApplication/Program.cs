@@ -13,21 +13,6 @@ namespace DelegateFactory_ConsoleApplication
 
         static void Main(string[] args)
         {
-            /*Del_Katz miez;
-
-            miez = new Del_Katz(StepsToBuild.rohKatze_bereitstellen);
-            miez += new Del_Katz(StepsToBuild.pfoten_bereitstellen);
-            miez += new Del_Katz(StepsToBuild.pfoten_einsetzen);
-            miez += new Del_Katz(StepsToBuild.schnurrhaare_montieren);
-            miez += new Del_Katz(StepsToBuild.pfoten_schnurrhaare_verbinden);
-
-            /* miez("Schnurri");
-            ReadLine();
-
-            miez -= new Del_Katz(StepsToBuild.pfoten_schnurrhaare_verbinden);
-            miez("Mauzi");
-            ReadLine();*/
-
             Del_Katz Katze_bauen = new Del_Katz((string miez) => { });
 
             List<Del_Katz> katzenliste = new List<Del_Katz>() {
@@ -40,11 +25,11 @@ namespace DelegateFactory_ConsoleApplication
             {
                 Katze_bauen += sprung;
             }
-            Katze_bauen("mauzi");
-            ReadLine();
-            Katze_bauen("miez");
-            ReadLine();
             Katze_bauen("Sally");
+            ReadLine();
+            Katze_bauen("Jack");
+            ReadLine();
+            Katze_bauen("Lilith");
             ReadLine();
             Katze_bauen("Aurora");
 
